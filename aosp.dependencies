@@ -10,6 +10,11 @@
     "branch":      "O-KernelX"
   },
   {
+    "remote":      "github",
+    "repository":  "Hlcpereira/prebuilts_clang_host_linux-x86_7.0-DragonTC",
+    "target_path": "prebuilts/clang/host/linux-x86/7.0-DragonTC"
+  },
+  {
     "repository":  "proprietary_vendor_xiaomi",
     "target_path": "vendor/xiaomi"
   },
