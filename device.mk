@@ -149,10 +149,6 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     Snap
 
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
-
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi_8996
