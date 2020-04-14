@@ -27,11 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+    $(LOCAL_PATH)/overlay-extended
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -359,10 +355,6 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libjson
 
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
-
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
@@ -408,10 +400,6 @@ PRODUCT_PACKAGES += \
     init.tfa.sh \
     tinyplay
 
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8996
-
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8996-lite.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8996-lite.conf \
@@ -420,11 +408,7 @@ PRODUCT_COPY_FILES += \
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/gemini
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
+    
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
