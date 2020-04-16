@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libfui \
     libstdc++.vendor \
-    Snap
+    GCam
 
 # Consumer IR
 PRODUCT_PACKAGES += \
