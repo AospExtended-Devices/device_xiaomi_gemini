@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "aex-devices",
+    "repository" : "vendor_xiaomi_gemini",
+    "target_path": "vendor/xiaomi",
+    "branch"     : "10.x"
+  },
+  {
+    "remote":      "github",
+    "repository" : "xNombre/msm-4.4",
+    "target_path": "kernel/xiaomi/gemini",
+    "branch"     : "q-eas-infinity"
+  }
+]
