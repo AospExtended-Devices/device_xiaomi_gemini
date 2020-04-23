@@ -191,6 +191,7 @@ VENDOR_SECURITY_PATCH := 2018-10-01
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit.xiaomi_8996
