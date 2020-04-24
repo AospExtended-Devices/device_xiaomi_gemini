@@ -29,7 +29,7 @@ $(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official AospExtended
-#EXTENDED_BUILD_TYPE := OFFICIA
+EXTENDED_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_gemini
